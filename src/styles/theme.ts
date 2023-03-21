@@ -1,21 +1,12 @@
 import { extendTheme } from '@chakra-ui/react'
 
-// 2. Add your color mode config
-const config = {
-    initialColorMode: 'light',
-    useSystemColorMode: false,
-    styles: {
-        global: {
-            body: {
-                bg: 'gray.50',
-                color: 'gray.800'
-            }
-        }
+export const theme = extendTheme({
+    config: {
+        initialColorModel: "dark",
+        useSystemColorMode: true,
     },
     fonts: {
-        heading: 'Poppins',
-        body: 'Poppins',
+        heading: 'Open Sans',
+        body: 'Open Sans'
     }
-}
-
-export const theme = extendTheme({ config })
+})

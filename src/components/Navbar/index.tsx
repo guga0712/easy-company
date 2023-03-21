@@ -32,14 +32,12 @@ export default function WithSubnavigation() {
     return (
         <Box>
             <Flex
-                bg={useColorModeValue('white', 'gray.800')}
+                bg={useColorModeValue('white', 'black')}
                 color={useColorModeValue('gray.600', 'white')}
                 minH={'60px'}
                 py={{ base: 2 }}
                 px={{ base: 4 }}
                 borderBottom={1}
-                borderStyle={'solid'}
-                borderColor={useColorModeValue('gray.200', 'gray.700')}
                 align={'center'}>
                 <Flex
                     flex={{ base: 1, md: 'auto' }}
@@ -72,7 +70,7 @@ export default function WithSubnavigation() {
                     justify={'flex-end'}
                     direction={'row'}
                     spacing={6}>
-                    <Button onClick={toggleColorMode} bg={useColorModeValue('gray.200', 'gray.700')} >
+                    <Button onClick={toggleColorMode} bg={useColorModeValue('gray.100', 'gray.900')} >
                         {colorMode === 'light' ? <MoonIcon color='cyan.600' /> : <SunIcon color='cyan.600' />}
                     </Button>
                     <Button
@@ -99,8 +97,8 @@ export default function WithSubnavigation() {
 }
 
 const DesktopNav = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
-    const linkHoverColor = useColorModeValue('cyan.600', 'cyan.300');
+    const linkColor = useColorModeValue('black', 'white');
+    const linkHoverColor = 'cyan.500';
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
     return (
@@ -112,7 +110,7 @@ const DesktopNav = () => {
                             <Link
                                 p={2}
                                 href={navItem.href ?? '#'}
-                                fontSize={'sm'}
+                                fontSize={'lg'}
                                 fontWeight={500}
                                 color={linkColor}
                                 _hover={{
@@ -182,7 +180,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 const MobileNav = () => {
     return (
         <Stack
-            bg={useColorModeValue('white', 'gray.800')}
+            bg={useColorModeValue('white', 'black')}
             p={4}
             display={{ md: 'none' }}>
             {NAV_ITEMS.map((navItem) => (
