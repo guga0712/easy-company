@@ -70,16 +70,16 @@ export default function WithSubnavigation() {
                     justify={'flex-end'}
                     direction={'row'}
                     spacing={6}>
-                    <Button onClick={toggleColorMode} bg={useColorModeValue('gray.100', 'gray.900')} >
+                    <Button onClick={toggleColorMode} borderRadius='0' bg={useColorModeValue('gray.100', 'gray.900')} >
                         {colorMode === 'light' ? <MoonIcon color='cyan.600' /> : <SunIcon color='cyan.600' />}
                     </Button>
                     <Button
                         as={'a'}
                         display={{ base: 'none', md: 'inline-flex' }}
-                        fontSize={'sm'}
-                        fontWeight={600}
-                        color={'white'}
-                        bg={'cyan.500'}
+                        borderRadius='0'
+                        fontSize={'lg'}
+                        color='white'
+                        bg='cyan.500'
                         href={'#'}
                         _hover={{
                             bg: 'cyan.700',
