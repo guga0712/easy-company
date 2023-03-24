@@ -21,7 +21,7 @@ export default function Presentation() {
             <Flex alignItems='center' direction={{ base: 'column', md: 'row' }} gap='40px' justifyContent={{ base: 'center' }} >
 
                 <VStack gap='40px'>
-                    <Heading fontSize='50px' textAlign='center' color={useColorModeValue('black', 'white')} >Facilitando caminhos.</Heading>
+                    <Heading fontSize='50px' textAlign='center' color={useColorModeValue('black', 'white')} fontWeight='800' >Facilitando caminhos.</Heading>
                     <Divider orientation='horizontal' borderWidth='2px' w='10%' borderColor='cyan.500' opacity='1' />
                     <Button
                         as='a'
