@@ -1,3 +1,4 @@
+import Cases from "@/components/Cases";
 import Navbar from "@/components/Navbar";
 import Presentation from "@/components/Presentation";
 import Services from "@/components/Services";
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Presentation />
       <Services />
+      <Cases />
     </>
   )
 }

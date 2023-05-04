@@ -113,6 +113,7 @@ const DesktopNav = () => {
                                 fontSize={'lg'}
                                 fontWeight={500}
                                 color={linkColor}
+                                scrollBehavior='smooth'
                                 _hover={{
                                     textDecoration: 'none',
                                     color: linkHoverColor,
@@ -182,6 +183,7 @@ const MobileNav = () => {
         <Stack
             bg={useColorModeValue('white', 'black')}
             p={4}
+            h='80vh'
             display={{ md: 'none' }}>
             {NAV_ITEMS.map((navItem) => (
                 <MobileNavItem key={navItem.label} {...navItem} />
@@ -257,14 +259,14 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
     {
         label: 'Quem somos',
-        href: '#',
+        href: '#us',
     },
     {
         label: 'Serviços',
-        href: '#',
+        href: '#services',
     },
     {
         label: 'Cases',
-        href: '#',
+        href: '#cases',
     },
 ];

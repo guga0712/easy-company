@@ -1,4 +1,4 @@
-import { Box, Heading, Icon, Flex } from "@chakra-ui/react";
+import { Box, Flex, Heading, Icon, useColorModeValue } from "@chakra-ui/react";
 import { IconType } from "react-icons";
 
 interface ServiceProps {
@@ -11,7 +11,7 @@ export default function Service({ icon, title }: ServiceProps) {
         <Box
             w='300px'
             h='100px'
-            bg='#F6F6F6'
+            bg={useColorModeValue('#f6f6f6', '#101010')}
             role='group'
             transition='0.3s'
             _hover={{
@@ -31,3 +31,4 @@ export default function Service({ icon, title }: ServiceProps) {
         </Box>
     )
 }
+

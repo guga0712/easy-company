@@ -1,9 +1,6 @@
-import { Flex, Heading, ScaleFade, Stack, useColorModeValue, keyframes, chakra, shouldForwardProp, calc, Image, Button, VStack, Divider } from "@chakra-ui/react";
-import { isValidMotionProp, motion } from "framer-motion";
-import { FaShareAlt, FaCode, FaLaptop } from "react-icons/fa";
+import { Flex, Heading, Stack, useColorModeValue, Image, Button, VStack, Divider } from "@chakra-ui/react";
 import { IoMdCube, IoMdRocket, IoMdTrendingUp } from "react-icons/io";
 import Value, { ValueMain } from "../Value";
-import imagemHome from "../../../public/imagemHome.png"
 
 export default function Presentation() {
     return (
@@ -17,6 +14,7 @@ export default function Presentation() {
             alignItems='center'
             direction='column'
             gap='50px'
+            id='us'
         >
             <Flex alignItems='center' direction={{ base: 'column', md: 'row' }} gap='40px' justifyContent={{ base: 'center' }} >
 
@@ -34,6 +32,7 @@ export default function Presentation() {
                         borderColor='cyan.500'
                         boxShadow='inset 0 0 0 0 #00B5D8'
                         transition='0.5s'
+                        transitionTimingFunction='ease-in-out'
                         _hover={{
                             boxShadow: 'inset 180px 0 0 0 #00B5D8',
                             color: 'white'
@@ -47,6 +46,6 @@ export default function Presentation() {
                 <Value icon={IoMdCube} title={"Product Design."} resume="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu odio, vestibulum sed tempus et, molestie in dui. Mauris eget gravida ex. Aliquam erat volutpat. Cras sodales elementum nisl vel euismod." />
                 <Value icon={IoMdRocket} title={"Inovative Solutions."} resume="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu odio, vestibulum sed tempus et, molestie in dui. Mauris eget gravida ex. Aliquam erat volutpat. Cras sodales elementum nisl vel euismod." />
             </Stack>
-        </Flex >
+        </Flex>
     )
 }
