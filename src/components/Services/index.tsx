@@ -30,7 +30,7 @@ export default function Services() {
                 justifyContent='center'
             >
                 <Heading fontWeight='800' fontSize='50px'>Serviços.</Heading>
-                <Text textAlign='center' marginBottom='20px' fontWeight='800' color='#00B5D8'>NÓS TRABALHAMOS COM VOCÊ, NÃO PARA VOCÊ</Text>
+                <Text textAlign='center' marginBottom='20px' fontWeight='800' color='#6B07D2'>NÓS TRABALHAMOS COM VOCÊ, NÃO PARA VOCÊ</Text>
                 <Flex direction={{ base: 'column' }} gap='20px'>
                     <Flex gap='20px' direction={{ base: 'column', md: 'row' }} mt='0' >
                         <Service icon={IoMdBriefcase} title={"Estratégia Digital"} />

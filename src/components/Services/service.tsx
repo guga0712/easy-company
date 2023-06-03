@@ -15,7 +15,7 @@ export default function Service({ icon, title }: ServiceProps) {
             role='group'
             transition='0.3s'
             _hover={{
-                bg: '#00B5D8',
+                bg: '#6B07D2',
                 color: 'white'
             }}
             overflow='hidden'

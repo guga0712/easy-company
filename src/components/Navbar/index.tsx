@@ -71,7 +71,7 @@ export default function WithSubnavigation() {
                     direction={'row'}
                     spacing={6}>
                     <Button onClick={toggleColorMode} borderRadius='0' bg={useColorModeValue('gray.100', 'gray.900')} >
-                        {colorMode === 'light' ? <MoonIcon color='cyan.600' /> : <SunIcon color='cyan.600' />}
+                        {colorMode === 'light' ? <MoonIcon color='#6B07D2' /> : <SunIcon color='white' />}
                     </Button>
                     <Button
                         as={'a'}
@@ -79,10 +79,10 @@ export default function WithSubnavigation() {
                         borderRadius='0'
                         fontSize={'lg'}
                         color='white'
-                        bg='cyan.500'
+                        bg='#6B07D2'
                         href={'#'}
                         _hover={{
-                            bg: 'cyan.700',
+                            bg: '#6B07D2'
                         }}>
                         Contate nos
                     </Button>
@@ -98,7 +98,7 @@ export default function WithSubnavigation() {
 
 const DesktopNav = () => {
     const linkColor = useColorModeValue('black', 'white');
-    const linkHoverColor = 'cyan.500';
+    const linkHoverColor = '#6B07D2';
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
     return (

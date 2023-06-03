@@ -20,7 +20,7 @@ export default function Presentation() {
 
                 <VStack gap='40px'>
                     <Heading fontSize='50px' textAlign='center' color={useColorModeValue('black', 'white')} fontWeight='800' >Facilitando caminhos.</Heading>
-                    <Divider orientation='horizontal' borderWidth='2px' w='10%' borderColor='cyan.500' opacity='1' />
+                    <Divider orientation='horizontal' borderWidth='2px' w='10%' borderColor='#6B07D2' opacity='1' />
                     <Button
                         as='a'
                         w='180px'
@@ -29,12 +29,12 @@ export default function Presentation() {
                         p='30px'
                         bg='none'
                         border='3px solid'
-                        borderColor='cyan.500'
-                        boxShadow='inset 0 0 0 0 #00B5D8'
+                        borderColor='#6B07D2'
+                        boxShadow='inset 0 0 0 0 #6B07D2'
                         transition='0.5s'
                         transitionTimingFunction='ease-in-out'
                         _hover={{
-                            boxShadow: 'inset 180px 0 0 0 #00B5D8',
+                            boxShadow: 'inset 180px 0 0 0 #6B07D2',
                             color: 'white'
                         }}
                     >Contate nos</Button>

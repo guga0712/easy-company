@@ -21,17 +21,17 @@ export default function Value({ icon, title, resume }: ValueProps) {
                 role='group'
                 p='20px'
                 _hover={{
-                    bg: 'cyan.500',
+                    bg: '#6B07D2',
                     color: 'white',
                     shadow: ' rgba(0, 0, 0, 0.5) 0px 8px 24px;'
                 }}
                 transition='0.5s'
-                _first={{ color: 'cyan.500' }}
+                _first={{ color: '#6B07D2' }}
             >
                 <Flex direction='column' gap='20px'>
-                    <Icon as={icon} fontSize='50px' color='cyan.500' _groupHover={{ color: 'white', transition: '0.5s' }} p='5px' borderRadius='10px' />
+                    <Icon as={icon} fontSize='50px' color='#6B07D2' _groupHover={{ color: 'white', transition: '0.5s' }} p='5px' borderRadius='10px' />
                     <Heading fontSize={'24px'}>{title}</Heading>
-                    <Flex w='15%' h='2px' bg='cyan.500' margin='-10px 0 0 0' _groupHover={{ bg: 'white', transition: '0.5s' }}></Flex>
+                    <Flex w='15%' h='2px' bg='#6B07D2' margin='-10px 0 0 0' _groupHover={{ bg: 'white', transition: '0.5s' }}></Flex>
                     <Text fontSize='16px' fontWeight='500'>{resume}</Text>
                 </Flex>
             </Box >
@@ -44,7 +44,7 @@ export function ValueMain({ icon, title, resume }: ValueProps) {
         <Box
             w='350px'
             h='350px'
-            bg='cyan.500'
+            bg='#6B07D2'
             padding='15px'
             color='white'
             p='20px'
